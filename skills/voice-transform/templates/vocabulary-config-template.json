@@ -1,0 +1,88 @@
+{
+  "_comment": "Vocabulary configuration for voice-transform skill",
+  "_generated_from": "vocabulary-questionnaire.md",
+  "_last_updated": "YYYY-MM-DD",
+
+  "contractions": {
+    "policy": "always|context|never",
+    "examples": ["you're", "it's", "doesn't", "isn't", "won't", "can't"],
+    "context_rules": {
+      "high_formality": "fewer",
+      "medium_formality": "natural",
+      "low_formality": "frequent"
+    }
+  },
+
+  "preferred_verbs": {
+    "style": "concrete|collaborative|analytical",
+    "examples": {
+      "concrete": ["drove", "built", "shipped", "resolved", "unstuck", "delivered"],
+      "collaborative": ["aligned", "partnered", "enabled", "supported", "coordinated", "facilitated"],
+      "analytical": ["analyzed", "evaluated", "determined", "measured", "assessed", "validated"]
+    }
+  },
+
+  "avoided_verbs": [
+    "leverage",
+    "synergize",
+    "facilitated",
+    "addressed",
+    "engaged"
+  ],
+
+  "emoji_policy": {
+    "usage": "never|sparingly|strategic|freely",
+    "allowed_contexts": ["team", "mentoring", "informal"],
+    "common_emoji": ["✅", "⚠️", "📝", "🔍"],
+    "forbidden_contexts": ["leadership", "formal", "external"]
+  },
+
+  "signature_phrases": [
+    "Here's why:",
+    "Let me walk you through",
+    "Stay with me",
+    "Three areas:",
+    "Breaking this down:"
+  ],
+
+  "forbidden_words": [
+    "bandwidth",
+    "touch base",
+    "circle back",
+    "drill down",
+    "move the needle",
+    "low-hanging fruit",
+    "take this offline"
+  ],
+
+  "metaphor_style": {
+    "frequency": "technical|everyday|rare",
+    "examples": {
+      "technical": ["key exchange", "scaffold", "rate limiting", "circuit breaker"],
+      "everyday": ["organizing a closet", "untying a knot", "building a house"]
+    }
+  },
+
+  "audience_formality": {
+    "leadership": 5,
+    "peers": 3,
+    "team": 2,
+    "cross_functional": 3,
+    "external": 5,
+    "_scale": "1=very casual, 3=balanced, 5=very formal"
+  },
+
+  "technical_depth": "summary-first|deep-first|layered",
+
+  "sentence_complexity": {
+    "preference": "short|varied|complex",
+    "avg_words_per_sentence": 15,
+    "max_words_per_sentence": 25
+  },
+
+  "writing_samples": {
+    "analyzed": false,
+    "sample_paths": [],
+    "extracted_patterns": {}
+  }
+}
